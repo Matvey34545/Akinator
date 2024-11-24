@@ -1,0 +1,22 @@
+{
+This animal?
+	{
+	This cat?
+		{
+		cat
+		-
+		-
+		}
+	-
+	}
+	{
+	This dog?
+		{
+		dog
+		-
+		-
+		}
+	-
+	}
+}
+
