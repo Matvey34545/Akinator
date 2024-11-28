@@ -5,11 +5,8 @@
 #include "database.h"
 #include "stack.h"
 
-const int SIZE_ANSWER = 100;
-
 static bool func_search(const Top *top);
 static Top *find_top(Top *top);
-static bool enter_answer();
 static ErrorAkinator enter_question(char **question, char **object);
 static void free_sub_akinator(Top *top);
 static bool is_have_in_subtree(const char *str, const Top *top, stack_t *stack_t);
@@ -104,7 +101,7 @@ static bool func_search(const Top *top)
     return enter_answer();
 }
 
-static bool enter_answer()
+bool enter_answer()
 {
     char answer[SIZE_ANSWER] = {};
 

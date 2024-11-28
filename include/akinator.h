@@ -3,6 +3,8 @@
 
 #include "bynar_tree.h"
 
+const int SIZE_ANSWER = 100;
+
 enum ErrorAkinator
 {
     AKIN_ERROR_NO         = 0,
@@ -34,5 +36,7 @@ void dtor_akinator(BynarTree* tree, Database *database);
 ErrorAkinator choice_read_database(BynarTree *tree, Database *database);
 ErrorAkinator give_definition(const BynarTree *tree);
 ErrorAkinator compare_words(const BynarTree *tree);
+
+bool enter_answer();
 
 #endif

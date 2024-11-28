@@ -1,4 +1,17 @@
 digraph list{
 rankdir = HR
+node1 [shape=Mrecord, style="filled",  fillcolor = "green", label = "value: This animal?"]
+node2 [shape=Mrecord, style="filled",  fillcolor = "green", label = "value: This cat?"]
+node3 [shape=Mrecord, style="filled",  fillcolor = "green", label = "value: This paper?"]
+node4 [shape=Mrecord, style="filled",  fillcolor = "red", label = "value: paper"]
+node5 [shape=Mrecord, style="filled",  fillcolor = "red", label = "value: cat"]
+node6 [shape=Mrecord, style="filled",  fillcolor = "green", label = "value: This dog?"]
+node7 [shape=Mrecord, style="filled",  fillcolor = "red", label = "value: dog"]
 edge[color=black]
+node1->node2 [xlabel = "YES"]
+node2->node3 [xlabel = "YES"]
+node3->node4 [xlabel = "YES"]
+node3->node5 [xlabel = "NO"]
+node1->node6 [xlabel = "NO"]
+node6->node7 [xlabel = "YES"]
 }
